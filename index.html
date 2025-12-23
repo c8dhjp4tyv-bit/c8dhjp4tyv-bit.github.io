@@ -8,35 +8,62 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Calculator</h1>
-    <p class="subtitle">
-      Modern • Scientific • Lightweight
-    </p>
-
-    <div class="card">
-      <h2>Features</h2>
-      <ul>
-        <li>✔ Scientific calculations</li>
-        <li>✔ Unit conversions</li>
-        <li>✔ Clean & modern UI</li>
-        <li>✔ Windows executable</li>
-      </ul>
-    </div>
-
-    <div class="buttons">
-      <a href="https://github.com/c8dhjp4tyv-bit/Calculator" target="_blank">
-        View on GitHub
-      </a>
-      <a href="https://github.com/c8dhjp4tyv-bit/Calculator/releases" target="_blank" class="secondary">
-        Download
-      </a>
-    </div>
-
-    <footer>
-      © 2025 Calculator Project
-    </footer>
+<header>
+  <h1>Calculator</h1>
+  <p>Powerful • Scientific • Smart</p>
+  <div class="header-buttons">
+    <a href="#features">Features</a>
+    <a href="#download" class="primary">Download</a>
   </div>
+</header>
 
+<section id="features" class="glass">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="feature">🧮 Scientific calculations</div>
+    <div class="feature">🔁 Unit & currency conversion</div>
+    <div class="feature">🌙 Dark / Light mode</div>
+    <div class="feature">🌍 Multi-language support</div>
+    <div class="feature">⚡ Fast & lightweight</div>
+    <div class="feature">🖥 Windows executable</div>
+    <div class="feature">📦 Portable version</div>
+    <div class="feature">🔒 Offline usage</div>
+  </div>
+</section>
+
+<section class="glass">
+  <h2>Live Demo</h2>
+  <div class="demo">
+    <input type="number" id="a" placeholder="Number A">
+    <input type="number" id="b" placeholder="Number B">
+    <div class="demo-buttons">
+      <button onclick="calc('+')">+</button>
+      <button onclick="calc('-')">−</button>
+      <button onclick="calc('*')">×</button>
+      <button onclick="calc('/')">÷</button>
+    </div>
+    <p id="result">Result: —</p>
+  </div>
+</section>
+
+<section id="download" class="glass">
+  <h2>Get the App</h2>
+  <div class="buttons">
+    <a href="https://github.com/c8dhjp4tyv-bit/Calculator" target="_blank">
+      GitHub Repository
+    </a>
+    <a href="https://github.com/c8dhjp4tyv-bit/Calculator/releases" target="_blank" class="secondary">
+      Download Latest
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Calculator Project • Built with ❤️
+  <button id="themeToggle">🌙</button>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
